@@ -1,6 +1,6 @@
-def f_to_p(i, n, f=1):
-    factor = 1/(1+i)**n
-    return f*factor
+def future_to_present(i, n, f=1):
+    factor = 1 / (1 + i) ** n
+    return f * factor
 
 
 # x = input() #for example: -400,100,120,130,200
@@ -13,3 +13,7 @@ def f_to_p(i, n, f=1):
 #     p += f_to_p(i, n, f)
 
 # print(p)
+
+def present_to_future(i, n, p=1):
+    factor = (1 + i)**n
+    return p * factor
