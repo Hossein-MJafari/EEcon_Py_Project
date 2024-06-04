@@ -17,3 +17,8 @@ def future_to_present(i, n, f=1):
 def present_to_future(i, n, p=1):
     factor = (1 + i)**n
     return p * factor
+
+
+def present_to_annual(i, n, p=1):
+    factor = i * (1+i) ** n / (((1+i) ** n) - 1)
+    return p * factor
